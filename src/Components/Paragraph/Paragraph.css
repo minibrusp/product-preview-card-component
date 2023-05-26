@@ -1,0 +1,5 @@
+.card__paragraph__text {
+  font-size: 1rem;
+  font-family: var(--Font-Family-Monteserrat);
+  color: var(--Neutral-Dark-Grayish-Blue);
+}

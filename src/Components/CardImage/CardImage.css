@@ -1,0 +1,12 @@
+.card__img__container img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 8px 8px 0 0;
+}
+
+@media screen and (min-width: 650px) {
+  .card__img__container img {
+    max-width: 300px;
+    border-radius: 8px 0 0 8px;
+  }
+}

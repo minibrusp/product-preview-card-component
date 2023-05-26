@@ -1,0 +1,18 @@
+
+h1.heading-tag {
+  font-size: 2.3em;
+  line-height: 1;
+  font-family: var(--Font-Family-Fraunces);
+  max-width: 340px;
+  margin: 0;
+}
+
+h2.heading-tag {
+  font-family: var(--Font-Family-Monteserrat);
+  color: var(--Neutral-Dark-Grayish-Blue);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: .9rem;
+  font-weight: 400;
+  margin: 0;
+}

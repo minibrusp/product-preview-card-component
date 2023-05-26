@@ -1,0 +1,6 @@
+.card__amount__original__price {
+  font-family: var(--Font-Family-Monteserrat);
+  color: var(--Neutral-Dark-Grayish-Blue);
+  text-decoration: line-through;
+  font-size: 1rem;
+}
