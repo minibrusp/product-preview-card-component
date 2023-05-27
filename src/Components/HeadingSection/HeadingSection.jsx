@@ -1,16 +1,16 @@
 import HeadingText from "../HeadingText/HeadingText"
 import "./HeadingSection.css"
 
-export default function HeadingSection() {
+export default function HeadingSection({ productName, productType }) {
   return (
     <div className="card__heading">
       <HeadingText 
         level="1"
-        text="Gabrielle Essence Eau De Parfum"
+        text={productName}
       />
       <HeadingText 
         level="2"
-        text="Perfume"
+        text={productType}
       />
     </div>
   )

@@ -1,5 +1,6 @@
 import Button from "../Button/Button"
 import CTAIcon from '../../assets/images/icon-cart.svg';
+import "./CTASection.css"
 
 export default function CTASection() {
   return (

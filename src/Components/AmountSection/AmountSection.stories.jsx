@@ -1,6 +1,5 @@
 import { number } from "prop-types"
 import AmountSection from "./AmountSection"
-import "./AmountSection.css"
 
 export default {
   component: AmountSection,

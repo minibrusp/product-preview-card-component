@@ -1,5 +1,6 @@
 import CurrentPrice from "../CurrentPrice/CurrentPrice"
 import OriginalPrice from "../OriginalPrice/OriginalPrice"
+import "./AmountSection.css"
 
 export default function AmountSection({ currentPrice, originalPrice }) {
   return (

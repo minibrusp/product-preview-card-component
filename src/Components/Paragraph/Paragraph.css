@@ -2,4 +2,13 @@
   font-size: 1rem;
   font-family: var(--Font-Family-Monteserrat);
   color: var(--Neutral-Dark-Grayish-Blue);
+  margin: 0;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+@media screen and (min-width: 650px) {
+  .card__paragraph__text {
+    max-width: 230px;
+  }
 }
