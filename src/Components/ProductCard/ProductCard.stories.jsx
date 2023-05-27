@@ -1,4 +1,6 @@
 import ProductCard from "./ProductCard"
+import ProductImageMobile from "../../assets/images/image-product-mobile.jpg"
+import ProductImageDesktop from "../../assets/images/image-product-desktop.jpg"
 
 export default {
   component: ProductCard,
@@ -11,8 +13,8 @@ export default {
       text: "A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.",
       currentPrice: "149.99",
       originalPrice: "169.99",
-      imgUrlMobile: "/src/assets/images/image-product-mobile.jpg",
-      imgUrlDesktop: "/src/assets/images/image-product-desktop.jpg",
+      imgUrlMobile: ProductImageMobile,
+      imgUrlDesktop: ProductImageDesktop,
     }
   },
   argTypes: {
