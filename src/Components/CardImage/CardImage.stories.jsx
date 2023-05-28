@@ -1,6 +1,8 @@
 import CardImage from "./CardImage"
 import ProductImageMobile from "../../assets/images/image-product-mobile.jpg"
 import ProductImageDesktop from "../../assets/images/image-product-desktop.jpg"
+import { within } from "@storybook/testing-library";
+import { expect } from "@storybook/jest"
 
 
 export default {
@@ -10,6 +12,13 @@ export default {
   args: {
     altText: "Product Image"
   },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+
+    const image = canvas.getByAltText(/Product Image/i)
+
+    await expect(image).toBeInTheDocument()
+  }
 }
 
 export const Mobile = {
@@ -29,7 +38,7 @@ export const Mobile = {
         defaultValue: ProductImageMobile
       }
     }
-  }
+  },
 }
 
 export const Desktop = {

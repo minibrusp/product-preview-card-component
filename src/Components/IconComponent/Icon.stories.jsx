@@ -1,5 +1,7 @@
 import Icon from "./Icon"
 import CartIcon1 from "../../assets/images/icon-cart.svg"
+import { within } from "@storybook/testing-library";
+import { expect } from "@storybook/jest"
 
 export default {
   component: Icon,
@@ -17,6 +19,12 @@ export default {
         defaultValue: CartIcon1
       }
     }
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+
+    const icon = canvas.getByAltText(/cart icon/i)
+    await expect(icon).toBeInTheDocument()
   }
 }
 

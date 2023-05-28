@@ -1,5 +1,6 @@
 import CurrentPrice from "./CurrentPrice"
-
+import { within } from "@storybook/testing-library";
+import { expect } from "@storybook/jest"
 
 
 export default {
@@ -13,9 +14,16 @@ export default {
     currentPrice: {
       control: {
         type: "number",
-        
       }
     }
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+
+    const price = canvas.getByText(/149.99/i)
+
+    await expect(price).toBeInTheDocument()
+    await expect(price).not.toHaveClass("--not-current")
   }
 }
 

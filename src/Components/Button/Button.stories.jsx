@@ -1,5 +1,7 @@
 import Button from "./Button";
 import CartIcon from "../../assets/images/icon-cart.svg"
+import { within } from "@storybook/testing-library";
+import { expect } from "@storybook/jest"
 
 export default {
   component: Button,
@@ -23,5 +25,14 @@ export const Primary = {
         defaultValue: CartIcon
       }
     }
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+
+    const addCartButton = canvas.getByRole("button", { name: /Add to Cart/i })
+    const cartButtonIcon = canvas.getByAltText(/Cart Icon/i)
+
+    await expect(addCartButton).toBeInTheDocument()
+    await expect(cartButtonIcon).toBeInTheDocument()
   }
 }
