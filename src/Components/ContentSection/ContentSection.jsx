@@ -4,19 +4,25 @@ import AmountSection from "../AmountSection/AmountSection"
 import CTASection from "../CTASection/CTASection"
 import "./ContentSection.css"
 
-export default function ContentSection({ product }) {
+export default function ContentSection({ 
+  productName,
+  productType,
+  text,
+  currentPrice,
+  originalPrice,
+ }) {
   return (
     <div className="card__content">
       <HeadingSection 
-        productName={product.productName}
-        productType={product.productType}
+        productName={productName}
+        productType={productType}
       />
       <ParagraphSection 
-        text={product.text} 
+        text={text} 
       />
       <AmountSection 
-        currentPrice={product.currentPrice}
-        originalPrice={product.originalPrice}
+        currentPrice={currentPrice}
+        originalPrice={originalPrice}
       />
       <CTASection />
     </div>

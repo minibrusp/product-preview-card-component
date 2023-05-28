@@ -2,15 +2,27 @@ import CardImageSection from "../CardImageSection/CardImageSection"
 import ContentSection from "../ContentSection/ContentSection"
 import "./ProductCard.css"
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ 
+  productName,
+  productType,
+  text,
+  currentPrice,
+  originalPrice,
+  imgUrlMobile,
+  imgUrlDesktop,
+ }) {
   return (
     <div className="card">
-      <CardImageSection 
-        imgUrlMobile={product.imgUrlMobile}
-        imgUrlDesktop={product.imgUrlDesktop} 
+      <CardImageSection
+        imgUrlMobile={imgUrlMobile}
+        imgUrlDesktop={imgUrlDesktop}
       />
       <ContentSection
-        product={product}
+        productName={productName}
+        productType={productType}
+        text={text}
+        currentPrice={currentPrice}
+        originalPrice={originalPrice}
       />
     </div>
   )
