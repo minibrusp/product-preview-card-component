@@ -34,5 +34,6 @@ export const Primary = {
 
     await expect(addCartButton).toBeInTheDocument()
     await expect(cartButtonIcon).toBeInTheDocument()
+    await expect(addCartButton).toHaveStyle("background-color: hsl(158, 36%, 37%)")
   }
 }

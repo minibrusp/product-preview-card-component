@@ -1,0 +1,22 @@
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
+footer p {
+  font-family: var(--Font-Family-Monteserrat);
+  font-size: 1rem;
+  margin: 0;
+}
+
+footer a {
+  color: var(--Primary-Dark-Cyan);
+}
+
+footer a:hover {
+  color: var(--Primary-Very-Dark-Cyan)
+}
