@@ -21,7 +21,7 @@
 
 ### Links
 
--   Solution URL: [here]()
+-   Solution URL: [here](https://www.frontendmentor.io/solutions/product-preview-card-component-react-css-vite-storybook-6h3EExzo-d)
 -   Live Site URL: [here](https://product-preview-card-component-three-tau.vercel.app/)
 -   Storybook URL: [here](https://product-preview-card-component-storybook.vercel.app/)
 
