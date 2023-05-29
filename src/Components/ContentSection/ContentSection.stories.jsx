@@ -5,16 +5,15 @@ export default {
   title: 'Components/Organism/ContentSection',
   tags: ['autodocs'],
   args: {
-    product: {
-      productName: "Gabrielle Essence Eau De Parfum",
-      productType: "Perfume",
-      text: "A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.",
-      currentPrice: "149.99",
-      originalPrice: "169.99"
-    }
+    productName: "Gabrielle Essence Eau De Parfum",
+    productType: "Perfume",
+    text: "A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.",
+    currentPrice: "149.99",
+    originalPrice: "169.99"
   },
   argTypes: {
-    product: { control: "object" }
+    currentPrice: { control: "number" },
+    originalPrice: { control: "number" },
   }
 }
 
