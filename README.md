@@ -21,8 +21,8 @@
 
 ### Links
 
--   Solution URL: [here](https://www.frontendmentor.io/solutions/space-tourism-website-react-react-routerv6-tailwindcss-vite-framer-PMMIeJlQt-)
--   Live Site URL: [here](https://space-tourism-website-red.vercel.app/)
+-   Solution URL: [here]()
+-   Live Site URL: [here](https://product-preview-card-component-three-tau.vercel.app/)
 -   Storybook URL: [here](https://product-preview-card-component-storybook.vercel.app/)
 
 ### Built with
